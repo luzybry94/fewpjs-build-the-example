@@ -3,9 +3,16 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
+const errorDiv = document.querySelector("#modal")
+errorDiv.classList.add("hidden")
 
 
-
+let hearts = document.querySelectorAll(".like-glyph");
+for (let heart of hearts) {
+  heart.addEventListener("click", () => {
+    console.log("clicked")
+  } );
+}
 
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
